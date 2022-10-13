@@ -1,0 +1,234 @@
+html {
+    background: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
+}
+
+.container {
+    background-color: #F5F7FB;
+    position: relative;
+    width: 550px;
+    height: 700px;
+    left: 95px;
+    top: 112px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.main {
+    margin-top: 25%;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    position: relative;
+    width: 137px;
+    height: 10px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 37px;
+    text-align: center;
+    color: #293264;
+}
+
+.start--tagline {
+    position: relative;
+    width: 318px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #293264;
+}
+
+.start--button {
+    position: relative;
+    color: white;
+    width: 193px;
+    height: 52px;
+    background: #4D5B9E;
+    border-radius: 15px;
+}
+
+.start--button:active {
+    box-shadow: inset 1px 2px 5px rgb(24, 24, 24);
+    transform: translateY(1px);
+
+
+}
+
+.yellow--blob {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 65%;
+    top: -250px;
+    bottom: -161.16%;
+    background: #FFFAD1;
+    transform: rotate(-185deg);
+    perspective: 800px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 5px #b4aa64;
+}
+
+.blue--blob {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    right: 75%;
+    bottom: -100px;
+    border-radius: 50%;
+    background: #DEEBF8;
+    ;
+    transform: rotate(-185deg);
+    perspective: 1000px;
+
+}
+
+/*Game Component Syles */
+
+.game--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+    height: 550px;
+    width: 400px;
+    z-index: 10;
+
+}
+
+.answer--container {
+    position: relative;
+    width: 420px;
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    width: 100%;
+    height: auto;
+    left: 75px;
+    top: 40px;
+
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #293264;
+}
+
+.question {
+    width: 420px;
+    height: auto;
+    left: 75px;
+    top: 40px;
+    z-index: 10;
+}
+
+.answer--button {
+    background-color: transparent;
+    border: 0px solid #4D5B9E;
+    border-radius: 7.71045px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10.24px;
+    line-height: 12px;
+    text-align: center;
+    min-width: 35px;
+    color: #293264;
+    padding: 4px;
+    padding-left: px;
+    padding-right: px;
+    margin-right: 15px;
+
+}
+
+.answer--button:disabled {
+    box-shadow: 0;
+    transform: 0;
+    opacity: 0.5;
+}
+
+.answer--button:active:enabled {
+    background: #D6DBF5;
+    box-shadow: inset 1px 2px 5px rgb(24, 24, 24);
+    transform: translateY(1px);
+
+}
+
+hr {
+    width: 399px;
+    height: 0px;
+    left: 75px;
+    top: 107px;
+
+    border: 0.794239px solid #DBDEF0;
+    transform: rotate(-0.05deg);
+}
+
+.button--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.new--questions {
+    margin-left: 30px;
+    margin-right: auto;
+    margin-top: 40px;
+    ;
+    position: relative;
+    color: white;
+    width: 120px;
+    height: 40px;
+    background: #4D5B9E;
+    border-radius: 15px;
+}
+
+.check--answers {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    ;
+    position: relative;
+    color: white;
+    width: 120px;
+    height: 40px;
+    background: #4D5B9E;
+    border-radius: 15px;
+}
+
+
+.new--questions:active {
+    box-shadow: inset 1px 2px 5px rgb(24, 24, 24);
+    transform: translateY(1px);
+
+
+}
+
+.score {
+    position: absolute;
+    right: 80px;
+    bottom: 40px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    color: red
+}
